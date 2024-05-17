@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros Re-Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+    .feedback-form-container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 3px solid #000;
+      border-radius: 5px;
+     
+  }
+  
+  /* Style the form */
+  .feedback-form-container form {
+      display: grid;
+      gap: 10px;
+  }
+  
+  /* Style form labels */
+  .feedback-form-container label {
+      font-weight: bold;
+  }
+  
+  /* Style form inputs and textarea */
+  .feedback-form-container input[type="text"],
+  .feedback-form-container input[type="email"],
+  .feedback-form-container textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box; /* Ensure padding and border are included in the width */
+  }
+  
+  /* Style the submit button */
+  .feedback-form-container input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  /* Change button color on hover */
+  .feedback-form-container input[type="submit"]:hover {
+      background-color: #0056b3;
+  }
+  
+  /* Style form headings */
+  .feedback-form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  </style>
+</head>
+<body><header>
+   <nav>
+       <div class="logo">
+           <img src="images/logo2.jpeg" alt="">
+       </div>
+       <ul>
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="movies.html">MOVIES</a></li>
+           <li><a href="Tv shows.html">TV SHOWS</a></li>
+           <li><a href="games and apps.html">GAMES & APPS</a></li>
+           <li><a href="collections.html">COLLECTIONS</a></li>
+           <li><a href="Feedback.html">FEEDBACK</a></li> 
+       </ul>
+   </nav>
+</header>
+
+    <div class="feedback-form-container">
+      <h2>Warner Bros. Feedback Form</h2>
+      <form action="submit_feedback.php" method="post">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required><br>
+          
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br>
+          
+          <label for="feedback">Feedback:</label><br>
+          <textarea id="feedback" name="feedback" rows="4" required></textarea><br>
+          
+          <input type="submit" value="Submit">
+      </form>
+
+      
+      <footer class="footer">
+         <div class="container">
+             <p>&copy; 2024 Warner Bros. Entertainment Inc. All Rights Reserved.</p>
+             <div class="social-icons">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-twitter"></i></a>
+                 <a href="#"><i class="fab fa-instagram"></i></a>
+                 <a href="#"><i class="fab fa-linkedin"></i></a>
+                 <!-- Add more social icons here as needed -->
+             </div>
+         </div>
+     </footer>
+     
+
+</body>
+</html>
